@@ -10,6 +10,16 @@ public class MyFrame extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
+
+        JButton button = new JButton("Click Me");
+        button.addActionListener(e -> JOptionPane.showMessageDialog(this, "Button Clicked!"));
+        setLayout(new FlowLayout());
+        add(button);
+
+
+
         setVisible(true);
     }
 }
+
+
